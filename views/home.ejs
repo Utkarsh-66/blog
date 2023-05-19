@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Home</h1>
+  <p> <%= startingcontent %> </p>
+
+  <%  newPosts.forEach(function(data){  %>
+      <h1><%= data.title %></h1>
+      <% console.log(data.title); %>
+      <p><%=  data.content.substring(0,100) + "..." %>   <a href="/<%= data.title %>">Read More</a> </p>
+  <%  });  %>
+</div>
